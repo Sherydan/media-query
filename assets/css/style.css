@@ -11,7 +11,8 @@
     "search"
     "main"
     "footer";
-    width: 100%;
+    grid-template-rows: 10vh 15vh 60vh 15vh;
+
 }
 
 nav{
@@ -27,6 +28,7 @@ nav{
 .main{
     grid-area: main;
     background-color: rgb(236, 6, 6);
+    overflow-y: scroll;
 }
 
 footer{
