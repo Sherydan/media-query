@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "search"
+    "main"
+    "footer";
+    width: 100%;
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(53, 53, 202);
+}
+
+.search{
+    grid-area: search;
+    background-color: rgb(177, 162, 162);
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(236, 6, 6);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(13, 211, 13);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+.card-img img{
+    width: 100%;
+
+}
+
+.card-btn{
+    width: 70%;
+    background-color: blue;
+}
