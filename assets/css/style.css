@@ -1,42 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-.wrapper{
+
+.wrapper {
     display: grid;
-    grid-template-areas: 
-    "nav"
-    "search"
-    "main"
-    "footer";
-    grid-template-rows: 10vh 15vh 60vh 15vh;
+    grid-template-areas:
+        "nav"
+        "search"
+        "main"
+        "footer";
+    grid-template-rows: 9vh 9vh 67vh 15vh;
 
 }
 
-nav{
+nav {
     grid-area: nav;
-    background-color: rgb(53, 53, 202);
+    background-color: rgb(18, 18, 180);
+    color: white;
 }
 
-.search{
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar :nth-child(1){
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navbar-title p{
+    margin-left: 0.5rem;
+}
+
+
+
+.navbar :nth-child(2){
+   margin-right: 1rem;
+}
+
+.material-icons-outlined {
+    font-size: 36px !important;
+}
+
+.search {
     grid-area: search;
     background-color: rgb(177, 162, 162);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.main{
+.main {
     grid-area: main;
     background-color: rgb(236, 6, 6);
     overflow-y: scroll;
 }
 
-footer{
+footer {
     grid-area: footer;
     background-color: rgb(13, 211, 13);
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,25 +80,37 @@ footer{
     margin: 1rem;
 }
 
-.card-img img{
+.card-img img {
     width: 100%;
 
 }
 
-.card-btn{
+.card-btn {
     width: 70%;
     background-color: blue;
 }
 
-.pagination{
+.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.pagination p{
-    border: 1px solid black;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
 }
