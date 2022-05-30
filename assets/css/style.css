@@ -53,11 +53,16 @@ nav {
 
 .search {
     grid-area: search;
-    background-color: rgb(177, 162, 162);
+    background-color: rgb(224, 224, 224);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#filter{
+    width: 80%;
+    height: 40%;
 }
 
 .main {
