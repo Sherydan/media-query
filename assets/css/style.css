@@ -141,3 +141,14 @@ footer{
     background-color: rgb(16, 16, 150);
     color: white;
 }
+
+@media only screen and (min-width: 768px){
+    .wrapper{
+        
+        grid-template:
+        "nav search" 1fr
+        "nav main" 8fr
+        "footer main" 1fr /
+        16vw auto;
+    }
+}
