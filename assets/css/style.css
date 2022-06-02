@@ -10,14 +10,17 @@
 
 .wrapper {
     display: grid;
+    height: 100vh;
     grid-template-areas:
         "nav"
         "search"
         "main"
         "footer";
-    grid-template-rows: 9vh 9vh 67vh 15vh;
+    grid-template-rows: 10% 10% 70% 10%;
 
 }
+
+
 
 nav {
     grid-area: nav;
@@ -40,8 +43,6 @@ nav {
 .navbar-title p{
     margin-left: 0.5rem;
 }
-
-
 
 .navbar :nth-child(2){
    margin-right: 1rem;
@@ -69,6 +70,10 @@ nav {
     grid-area: main;
     background-color: white;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -81,18 +86,25 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(248, 248, 248);
     margin: 1rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .card-img img {
     width: 100%;
-
 }
 
 .card-btn {
     width: 70%;
     background-color: blue;
+    text-align: center;
+    color: white;
+    padding:0.5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    user-select: none;
 }
 
 .pagination {
