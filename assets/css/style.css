@@ -131,3 +131,13 @@ footer {
 .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+    background-color: rgb(16, 16, 150);
+    color: white;
+}
