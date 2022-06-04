@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+
+/* css reset*/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,7 @@
   list-style: none;
 }
 
+/* remove link decorations */
 a:link {
   text-decoration: none;
   color: white;
@@ -18,6 +21,7 @@ a:visited {
   color: white;
 }
 
+/* page container */
 .wrapper {
   display: grid;
   height: 100vh;
@@ -35,14 +39,13 @@ nav {
   color: white;
 }
 
+/* navbar section styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem 0 1rem;
 }
-
-
 
 .navbar ul {
   display: none;
@@ -51,10 +54,8 @@ nav {
 .navbar-title p {
   margin-left: 0.5rem;
 }
+/* navbar styles end */
 
-.material-icons-outlined {
-  font-size: 36px !important;
-}
 
 .search {
   grid-area: search;
@@ -70,6 +71,7 @@ nav {
   height: 40%;
 }
 
+/* products main area */
 .main {
   grid-area: main;
   background-color: white;
@@ -79,6 +81,7 @@ nav {
   align-items: center;
 }
 
+/* products card style */
 .card {
   display: flex;
   flex-direction: column;
@@ -115,7 +118,10 @@ nav {
   background-color: #98c1d9;
   color: black;
 }
+/* card style end */
 
+
+/* pagination component */
 .pagination {
   display: flex;
   justify-content: center;
@@ -141,6 +147,7 @@ nav {
 .pagination a:hover:not(.active) {
   background-color: #e0fbfc;
 }
+/* pagination component end */
 
 footer {
   grid-area: footer;
@@ -154,6 +161,9 @@ footer {
   text-align: center;
 }
 
+/* MEDIA QUERYS */
+
+/* query for desktop layout */
 @media only screen and (min-width: 576px) {
   .wrapper {
     grid-template:
@@ -197,12 +207,16 @@ footer {
   }
 }
 
+/* card size for large screen and down */
 @media only screen and (max-width: 992px) {
   .card {
     max-width: 40%;
   }
 }
 
+
+
+/* query to recover mobile-layout when resizing occurs */
 @media only screen and (max-width: 576px) {
   .card-container {
     flex-direction: column;
@@ -211,10 +225,12 @@ footer {
     width: 100%;
   }
 
+  /* card size for mobile-layout */
   .card {
     max-width: 100%;
   }
 
+  /* display only one item on mobile */
   .card-container .card:not(:first-child) {
     display: none;
   }
