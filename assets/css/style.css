@@ -31,7 +31,7 @@ a:visited {
 
 nav {
   grid-area: nav;
-  background-color: rgb(18, 18, 180);
+  background-color: #3d5a80;
   color: white;
 }
 
@@ -39,13 +39,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 1rem 0 1rem;
 }
 
-.navbar span {
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
+
 
 .navbar ul {
   display: none;
@@ -61,7 +58,7 @@ nav {
 
 .search {
   grid-area: search;
-  background-color: rgb(224, 224, 224);
+  background-color: #e0fbfc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +101,7 @@ nav {
 
 .card-btn {
   width: 70%;
-  background-color: blue;
+  background-color: #3d5a80;
   text-align: center;
   color: white;
   padding: 0.5rem;
@@ -114,10 +111,16 @@ nav {
   user-select: none;
 }
 
+.card-btn:hover{
+  background-color: #98c1d9;
+  color: black;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .pagination a {
@@ -130,13 +133,13 @@ nav {
 }
 
 .pagination a.active {
-  background-color: #4caf50;
+  background-color: #3d5a80;
   color: white;
-  border: 1px solid #4caf50;
+  border: 1px solid #3d5a80;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: #e0fbfc;
 }
 
 footer {
@@ -146,7 +149,7 @@ footer {
   align-items: center;
   justify-content: center;
   line-height: 1.5rem;
-  background-color: rgb(16, 16, 150);
+  background-color: #98c1d9;
   color: white;
   text-align: center;
 }
@@ -166,12 +169,10 @@ footer {
     padding-top: 1rem;
   }
 
-  .navbar-menu .material-icons-outlined {
+  .navbar-menu i {
     display: none;
   }
-  .navbar span {
-    margin: 0;
-  }
+  
 
   .navbar-title {
     display: flex;
